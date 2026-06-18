@@ -1,12 +1,12 @@
 # Automated-Inventory-OOAD-System
 A complete Object-Oriented Analysis and Design (OOAD) architecture for an Automated Inventory & PO System, including UML diagrams.
 
-## 📌 System Overview
+##  System Overview
 The system is designed strictly using Object-Oriented Analysis and Design principles to manage warehouse inventory. By representing system entities as interacting objects (e.g., `User`, `Product`, `PurchaseOrder`), the system encapsulates business logic, eliminates human errors, and prevents sudden product shortages. 
 
 When a `Product` object's stock reaches its predefined "Reorder Point", the system auto-instantiates a new `PurchaseOrder` object, routes it to a `FinanceManager` for approval, and transmits it to an external `SupplierAPI`.
 
-## 🏗️ Object-Oriented Principles Applied
+##  Object-Oriented Principles Applied
 * **Encapsulation:** All sensitive data (product quantities, financial limits) are hidden within their respective classes and can only be accessed/modified through secure public methods.
 * **Inheritance:** A base abstract class `User` is created. Specific actors like `InventoryManager` and `FinanceManager` inherit from this base class, adding their specific roles.
 * **Polymorphism:** The system utilizes interfaces for the `SupplierAPI`, allowing communication with multiple external suppliers using a unified method signature.
@@ -15,7 +15,7 @@ When a `Product` object's stock reaches its predefined "Reorder Point", the syst
 
 ## 📊 System Modeling Diagrams
 
-### 1️⃣ UML Use Case Diagram
+###  UML Use Case Diagram
 ```mermaid
 flowchart LR
     classDef actor fill:#f9f9f9,stroke:#333,stroke-width:1.5px,color:#000;
@@ -60,7 +60,7 @@ flowchart LR
     API --- UC09
 ```
 
-### 2️⃣ UML Class Diagram (Core OOP Structure)
+###  UML Class Diagram (Core OOP Structure)
 ```mermaid
 classDiagram
     class User {
