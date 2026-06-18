@@ -143,7 +143,7 @@ classDiagram
     SystemAdmin ..> AuditLog : Reviews
 ```
 
-### 3️⃣ UML Sequence Diagram
+###  UML Sequence Diagram
 ```mermaid
 sequenceDiagram
     autonumber
@@ -194,7 +194,7 @@ sequenceDiagram
     deactivate PO
 ```
 
-### 4️⃣ UML Activity Diagram
+###  UML Activity Diagram
 ```mermaid
 flowchart TD
     classDef terminal fill:#333,stroke:#333,color:#fff,shape:circle;
